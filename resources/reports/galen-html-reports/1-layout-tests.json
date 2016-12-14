@@ -1,0 +1,41 @@
+{
+  "testId" : "1-layout-tests",
+  "name" : "Layout Tests",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Layout tests on desktop, SampleSpecFile.spec",
+      "status" : "error",
+      "time" : 1481732623589,
+      "includedTags" : [ "desktop" ],
+      "excludedTags" : [ ],
+      "sections" : [ {
+        "name" : "Main section",
+        "objects" : [ {
+          "name" : "searchDiv",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "src/main/java/SampleSpecFile.spec",
+              "lineNumber" : 12
+            },
+            "name" : "image file screenshots/desktop/SampleSpecFile.dump/objects/searchDiv.png",
+            "errors" : [ "Element does not look like \"src/main/java/screenshots/desktop/SampleSpecFile.dump/objects/searchDiv.png\". There are 20 mismatching pixels but max allowed is 0" ],
+            "highlight" : [ "searchDiv" ],
+            "imageComparison" : {
+              "actualImage" : "layout-2-searchDiv-actual.png",
+              "expectedImage" : "layout-3-searchDiv-expected.png",
+              "comparisonMapImage" : "layout-4-searchDiv-map.png"
+            }
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "searchDiv" : {
+          "area" : [ 246, 319, 632, 44 ]
+        }
+      },
+      "screenshot" : "layout-1-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+}
