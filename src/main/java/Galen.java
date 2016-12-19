@@ -37,7 +37,7 @@ public class Galen {
         String specPath = "src/main/java/SampleSpecFile.spec";
 
 
-        String pageDumpPath = "resources/screenshots/" + viewport + "/" + "SampleSpecFile" + ".dump";
+        String pageDumpPath = "src/main/java/screenshots/" + viewport + "/" + "SampleSpecFile" + ".dump";
 
         if (action.equals("takeDump"))
             com.galenframework.api.Galen.dumpPage(driver, "SampleSpecFile.spec", specPath, pageDumpPath);
