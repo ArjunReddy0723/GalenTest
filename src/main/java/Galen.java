@@ -51,7 +51,9 @@ public class Galen {
             tests.add(test);
             htmlreports.build(tests, reportFolderPath);
             tests.clear();
+
         }
+        driver.quit();
     }
 }
 
